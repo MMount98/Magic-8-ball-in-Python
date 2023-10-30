@@ -7,8 +7,8 @@ question = "Will I learn Python 3?"
 answer = ""
 random_number = random.randint(1, 11)
 
-
-# logiv for 8-ball
+# logic for 8-ball
+#Checks the vaule randomly set to "random_number" and sets ansert value accordingly
 if random_number == 1:
     answer = "Yes"
 elif random_number == 2:
@@ -16,7 +16,7 @@ elif random_number == 2:
 elif random_number == 3:
     answer = "Yes - Definitely"
 elif random_number == 4:
-    answer = "It is devidely so"
+    answer = "It is decidely so"
 elif random_number == 5:
     answer = "Without a doubt"
 elif random_number == 6:
@@ -35,6 +35,12 @@ else:
     answer = "The sprits are busy"
 
 # Prints Statement and question
-print(name + " asks: " + question)
-print("Magic 8-ball's answer: " + answer)
-
+# Logic in place if promtps are added later on
+if name == "":
+    print("Question: " + question)
+else:
+    print(name + " asks: " + question)
+if question == "":
+    print("Magic 8-ball can not forsee your question, please enter in a question to ask the magic 8-ball!")
+else:
+    print("Magic 8-ball's answer: " + answer)
